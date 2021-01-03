@@ -1,6 +1,4 @@
-# ASCII-renderer
-
-# is a simple renderer for windows terminal 
+# a simple renderer for windows terminal 
 
 ![teapot](images/teapot.png)
 ![cone](images/cone.png)
@@ -20,11 +18,12 @@ a comand line parameter.
 
 * .obj file should contain only vertex and face data, all faces should be triangles.
 * problems with loading some models, if they are not rotated (solving - rotate a model a little bit in a 3d editor)
+* controls should be done in another thread
 
 ## helpfull links:
 
 * [Cdonut](https://www.a1k0n.net/2011/07/20/donut-math.html)
-* [video about it](https://www.youtube.com/watch?v=DEqXNfs_HhY&ab_channel=LexFridman)
+* [video about cdonut](https://www.youtube.com/watch?v=DEqXNfs_HhY&ab_channel=LexFridman)
 * [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/rasterization.html)
-* [translation](https://habr.com/ru/post/342708/)
+* [компьютерная графика с нуля](https://habr.com/ru/post/342708/)
 * [very helpfull video](https://www.youtube.com/watch?v=XgMWc6LumG4&ab_channel=javidx9)
