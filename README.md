@@ -12,7 +12,7 @@
 * R for changing render type
 
 to open an .obj file you can drag and drop it on .exe file or run the program from a terminal with a path to the model as
-a comand line parameter.
+a comand line argument.
 
 ## some issues:
 
