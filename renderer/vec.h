@@ -1,4 +1,3 @@
-
 #pragma once
 
 #ifndef VEC_H
@@ -8,11 +7,13 @@
 
 class mat;
 
-class vec{
+class vec {
 
-private:
+  private:
+
     float eps = 0.001;
-public:
+
+  public:
 
     float x,y,z;
 
@@ -21,7 +22,6 @@ public:
     vec(const mat& m);
     float len();
     vec norm();
-
     void normalize();
     vec& operator+=(const vec& v);
     vec& operator-=(const vec& v);
@@ -38,13 +38,13 @@ public:
     friend vec cross(const vec& v1, const vec& v2);
 };
 
-class mat{
+class mat {
 
-private:
+  private:
     float matrix[4][4] = {0};
-    int rows = 0;
-    int cols = 0;
-public:
+    int rows;
+    int cols;
+  public:
 
     mat();
     mat(const vec& v);
@@ -55,6 +55,5 @@ public:
     friend class vec;
 
 };
-
 
 #endif // VEC_H

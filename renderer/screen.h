@@ -11,11 +11,13 @@ struct triangle;
 class OBJECT;
 
 class SCREEN {
-private:
+
+  private:
+
     HANDLE Console;
     DWORD dwBytesWritten;
-    int scrWIDTH, scrHEIGHT;
-    int VW,VH,d; // ширина, высота, смещение плоскости проекции
+    const int scrWIDTH, scrHEIGHT;
+    const int VH,VW,d; // ширина, высота, смещение плоскости проекции
     wchar_t *scr;
 
     const char* bright = ".,-~:;=!*#$@";
@@ -34,7 +36,9 @@ private:
     void DrawFilledTriangle(int x0, int y0, int x1, int y1, int x2, int y2, wchar_t chr = '.');
     void DrawFilledTriangle(vec P1, vec P2, vec P3, wchar_t chr = '.');
     void RenderTriangle(const triangle& T, const std::vector<vec>& prjct, bool light);
-public:
+
+  public:
+
     SCREEN(int w = 120, int h = 40);
     ~SCREEN();
     int Width();
@@ -43,10 +47,4 @@ public:
     void RenderObject(OBJECT& obj);
     friend class OBJECT;
 };
-
-
-
-
-
-
 #endif // SCREEN_H
