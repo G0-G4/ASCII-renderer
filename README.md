@@ -18,7 +18,7 @@ a comand line argument.
 
 * .obj file should contain only vertex and face data, all faces should be triangles.
 * problems with loading some models, if they are not rotated (solving - rotate a model a little bit in a 3d editor)
-* controls should be done in another thread
+* switching render type
 
 ## helpfull links:
 
